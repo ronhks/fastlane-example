@@ -1,4 +1,4 @@
-node {
+node('ios') {
 	stage 'Checkout and Setup'
 		checkout scm
 		sh 'cd fastlane'
