@@ -3,7 +3,7 @@ node('ios') {
 		checkout scm
 		sh 'cd fastlane'
 	stage 'Lint'
-		sh 'fastlane lint ignore_exit_status'
+		sh 'fastlane lint'
 	stage 'Test'
 		sh 'fastlane test'
 	stage 'Build'

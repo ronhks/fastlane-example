@@ -14,6 +14,7 @@ lane :lint do
 		mode: :lint,
 		output_file: 'reports/swiftlint.txt',
  		config_file: 'fastlane/.swiftlint.yml'
+		ignore_exit_status: true
 	)
 end
 
