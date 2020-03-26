@@ -30,11 +30,11 @@ lane :test do
 		output_types: "html, junit",
 		output_directory: "reports"		
 	}
-	if ENV["WORKSPACE"]
-		test_args[:workspace] = "src/" + ENV["WORKSPACE"]
-	else
+#	if ENV["WORKSPACE"]
+#		test_args[:workspace] = "src/" + ENV["WORKSPACE"]
+#	else
 		test_args[:project] = "src/" + ENV["PROJECT"]
-	end
+#	end
 
 	scan(test_args)
 
